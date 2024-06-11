@@ -12,7 +12,7 @@ This project is my attempt at Project 1 of the Machine Learning Engineer interns
 ## **Details**
 * **<u>Project Title:</u>** *Salary Predictions of Data Professionals*
 * **<u>Project Description:</u>** Salaries in the field of data professions vary widely based on factors such as experience, job role, and performance. Accurately predicting salaries for data professionals is essential for both job seekers and employers.  
-* **<u>Project Submission:</u>** All of the work to be evaluated for this project is found in the `salary-predictions.ipynb` file, located in the current directory, and in the `pipeline` folder, also located in the current directory.
+* **<u>Project Submission:</u>** All of the work to be evaluated for this project is found in the `salary-predictions.ipynb` file, located in the current directory, as well as in the `pipeline` and `presentations` folders, also located in the current directory.
 * **<u>Libraries Used:</u>** The following libraries were used for the stated purposes:
   - `os`, for file handling;
   - `sys`, for system handling;
