@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "initial-scale = 1.0, width = device-width">
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Salary Prediction</title>
+    </head>
+    <body>
+        <h1>Salary Prediction</h1>
+        <div id = "intro">
+            <h2 id = "intro-heading">Introduction</h2>
+            <p id = "intro-paragraph">This webpage is a Flask application implementing a Machine Learning model using a dataset containing general information about data professionals. Please complete the form in its entirety in order to generate the prediction.<p>
+        </div>
+        <div id = "form-details">
+            <h2 id = "form-details-heading">Detail Entry</h2>
+            <form action = "{{ url_for('predict')}}" method = "post">
+                <label for = "past-exp">Number of Years of Experience:</label>
+                <input type = "number" name = "past-exp" placeholder = "10" min = "1" max = "40" required = "required">
+                <label for = "designation">Select the designation:</label>
+                <select id = "designation-options" name="designation">
+                    <option value = "analyst">Analyst</option>
+                    <option value = "senior-analyst">Senior Analyst</option>
+                    <option value = "associate">Associate</option>
+                    <option value = "manager">Manager</option>
+                    <option value = "senior-manager">Senior Manager</option>
+                    <option value = "director">Director</option>
+                  </select>
+                <button type = "submit" class = "btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+        </div>
+        <div id = "prediction-text">
+            <p>{{ prediction_text }}</p>
+        </div>
+    </body>
+</html>
